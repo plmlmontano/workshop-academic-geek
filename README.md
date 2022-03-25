@@ -1,6 +1,7 @@
 # workshop-academic-geek
 En este repositorio encontraras el diagrama de modelo entidad-relacion de una empresa de modisteria, y encontraras el codigo de memorias de rick y morty
 
+## Comenzando
 Diagrama modelo entidad-relacion Empresa Don Samuel de modisteria
 ![diagrama](diagrama-modisteria.png)
 
@@ -10,3 +11,8 @@ Juego de la memoria Rick y Morty
 - Github Page [Juego de la memoria](https://plmlmontano.github.io/workshop-academic-geek/rick_morty_project/index.html)
 
 - ![juego-memoria](screen-juego-memoria.png)
+
+## Contribuyentes
+- [Juliana Torres](https://github.com/JULI125)
+- [Juan Hoyos](https://github.com/juanhcode)
+- [Lina Montaño](https://github.com/plmlmontano)
