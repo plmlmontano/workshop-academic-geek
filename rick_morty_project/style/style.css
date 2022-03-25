@@ -1,0 +1,38 @@
+body {
+    background-color: azure;
+    background-image: url('https://images8.alphacoders.com/633/thumb-1920-633270.png');
+}
+
+.carta-box {
+    margin: 100px;
+    width: 200px;
+    height: 250px;
+    position: relative;
+    perspective: 1000px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+/*
+
+.carta-box:hover .carta {
+    transform: rotateY(180deg);
+}
+
+.carta {
+    transform-style: preserve-3d;
+    transition: all 0.5s linear;
+}
+
+.cara {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+
+.cara.detras {
+    transform: rotateY(180deg);
+}
+*/
+
