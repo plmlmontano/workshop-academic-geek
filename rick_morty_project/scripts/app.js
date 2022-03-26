@@ -21,25 +21,29 @@ function cambiarCara(evento) {
     console.log(variable);
     let front = document.getElementsByClassName('front');
     let back = document.getElementsByClassName('back');
-    console.log(front);
-    front[0].classList.add('voltear');
-    back[0].classList.add('cambiarBack');
+    console.log(back)
+    for (let i = 0; i < front.length; i++) {
+        front[i].addEventListener('click', () => {
+            front[i].classList.add('voltear');
+            back[i].classList.add('cambiarBack');
+        });
+    }
+    
 }
 
-const sonIguales = (evento)=>{
-}
+const sonIguales = (evento) => {}
 
 document.addEventListener("DOMContentLoaded", () => {
     vida.textContent = 3;
-    let newCards = modificarCartas();   
-    newCards.forEach((carta)=>{
-        Carta(containerCarta,carta.image,carta.id)
-    }); 
+    let newCards = modificarCartas();
+    newCards.forEach((carta) => {
+        Carta(containerCarta, carta.image, carta.id)
+    });
 });
 
-function modificarCartas(){
-    let nuevasCartas = characters.slice(0,5);
-    let cartasRepetidas = [...nuevasCartas,...nuevasCartas];
+function modificarCartas() {
+    let nuevasCartas = characters.slice(0, 5);
+    let cartasRepetidas = [...nuevasCartas, ...nuevasCartas];
     let cartas = _.shuffle(cartasRepetidas);
     return cartas;
 }
