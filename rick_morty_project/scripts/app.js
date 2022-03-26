@@ -22,9 +22,15 @@ function cambiarCara(evento) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    let arregloNuevo = [...characters, ...characters]
-    for (let i = 0; i < arregloNuevo.length - 30; i++) {
-        Carta(containerCarta,arregloNuevo[i].image,arregloNuevo[i].id)
-    }
-    console.log(containerCarta);
+    let newCards = modificarCartas();   
+    newCards.forEach((carta)=>{
+        Carta(containerCarta,carta.image,carta.id)
+    }); 
 });
+
+function modificarCartas(){
+    let nuevasCartas = characters.slice(0,5);
+    let cartasRepetidas = [...nuevasCartas,...nuevasCartas];
+    let cartas = _.shuffle(cartasRepetidas);
+    return cartas;
+}
