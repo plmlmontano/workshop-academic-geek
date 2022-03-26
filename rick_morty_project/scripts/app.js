@@ -8,22 +8,22 @@ import {
 let containerCarta = document.querySelector('.carta-box');
 let nuevaCarta = document.getElementsByClassName('front-card');
 let vida = document.querySelector('.vida');
-console.log(nuevaCarta);
 
 
 document.addEventListener('click', (e) => {
-    for (let i = 0; i < nuevaCarta.length; i++) {
-        if(e.target.id === nuevaCarta[i].id) {
-            console.log("Hola")
-        }
-        
-    }
+    cambiarCara(e);
 })
 
 
 function cambiarCara(evento) {
-    console.log(evento.target.id);
-
+    let variable = null;
+    variable = evento.target.id;
+    console.log(variable);
+    let front = document.getElementsByClassName('front');
+    let back = document.getElementsByClassName('back');
+    console.log(front);
+    front[0].classList.add('voltear');
+    back[0].classList.add('cambiarBack');
 }
 
 const sonIguales = (evento)=>{

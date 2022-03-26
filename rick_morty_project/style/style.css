@@ -55,6 +55,7 @@ header{
     transform: perspective(500px) rotateY(180deg);
 }
 
+/*
 
 .card:hover .front{
     transform: perspective(500px) rotateY(180deg);
@@ -64,5 +65,15 @@ header{
 .card:hover .back{
     transform: perspective(500px) rotateY(360deg);
 }
+*/
 
+
+.card .voltear{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.card .cambiarBack{
+    transform: perspective(500px) rotateY(360deg);
+
+}
 
