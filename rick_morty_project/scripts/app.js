@@ -6,22 +6,31 @@ import {
 } from "../modules/carta.js";
 
 let containerCarta = document.querySelector('.carta-box');
+let nuevaCarta = document.getElementsByClassName('front-card');
+let vida = document.querySelector('.vida');
+console.log(nuevaCarta);
 
 
 document.addEventListener('click', (e) => {
-    if (e.target.classList.contains('cart')) {
-        cambiarCara(e);
+    for (let i = 0; i < nuevaCarta.length; i++) {
+        if(e.target.id === nuevaCarta[i].id) {
+            console.log("Hola")
+        }
+        
     }
 })
 
 
 function cambiarCara(evento) {
-    console.log("Se cambia la cara");
     console.log(evento.target.id);
 
 }
 
+const sonIguales = (evento)=>{
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+    vida.textContent = 3;
     let newCards = modificarCartas();   
     newCards.forEach((carta)=>{
         Carta(containerCarta,carta.image,carta.id)

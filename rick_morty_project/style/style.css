@@ -1,9 +1,24 @@
 body {
     background-color: azure;
     background-image: url('https://images8.alphacoders.com/633/thumb-1920-633270.png');
-
 }
 
+.logo {
+    margin:20px;
+}
+
+header{
+    display:grid;
+    grid-template-columns: 70% 15% 15%;
+}
+.puntaje{
+    margin:auto;
+    color: white;
+    font-size: 30px;
+}
+.money{
+    background-color: yellow;
+}
 .carta-box {
     margin: 100px;
     width: 200px;
@@ -45,10 +60,9 @@ body {
     transform: perspective(500px) rotateY(180deg);
 }
 
+
 .card:hover .back{
     transform: perspective(500px) rotateY(360deg);
 }
-
-
 
 
